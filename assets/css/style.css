@@ -21,6 +21,15 @@ a {
   text-decoration: none;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -264,4 +273,47 @@ a {
 
 .hero .desc-stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* popular */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.popular_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular_top .description {
+  width: 458px;
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+
+.popular_top .control {
+  display: flex;
+  gap: 18px;
+}
+
+.popular_top .control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular_top .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
