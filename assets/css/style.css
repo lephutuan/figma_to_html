@@ -424,8 +424,15 @@ a {
   background: #2e2100;
 }
 
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -465,10 +472,10 @@ a {
   cursor: pointer;
 }
 
-.feedback-item .dot.active{
+.feedback-item .dot.active {
   background-color: var(--primary-color);
   cursor: default;
-} 
+}
 
 .feedback-item .content {
   width: 66%;
